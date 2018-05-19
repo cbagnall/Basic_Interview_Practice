@@ -1,13 +1,13 @@
 
 
-typedef void* (callback)(node* data); //generic function which takes
-									  //a node and returns void
-
 typedef struct node
 {
 	int data;
 	struct node* next;
 }
+
+typedef void* (callback)(node* data); //generic function which takes
+									  //a node and returns void
 
 node* create(int data, node* next)
 {
